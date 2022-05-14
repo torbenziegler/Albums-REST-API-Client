@@ -49,7 +49,7 @@ fun CardContent(album: Album) {
                     .weight(1f)
                     .padding(12.dp)
             ) {
-                Text(text = "${album.releaseYear}, ")
+                Text(text = "${album.artist}, ${album.releaseYear}")
                 Text(
                     text = album.name,
                     style = MaterialTheme.typography.h4.copy(

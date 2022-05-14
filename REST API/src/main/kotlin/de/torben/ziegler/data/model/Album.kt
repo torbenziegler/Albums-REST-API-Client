@@ -8,7 +8,7 @@ data class Album(
     val artist: String,
     val releaseYear: Int,
     val imageUrl: String,
-    val dominantColors: List<String>,
+    val dominantColors: List<String>?,
     val songs: List<Song>
 )
 
@@ -127,6 +127,38 @@ object Albums {
                 Song("OUT WEST (feat. Young Thug)", "2:37"),
                 Song("WHAT TO DO? (feat. Don Doliver)", "4:10"),
                 Song("GATTI", "3:01")
+            )
+        ),
+        Album(
+            "Un Verano Sin Ti",
+            "Bad Bunny",
+            2022,
+            "${Constants.BASE_URL}/album_covers/unveranosinti.jpg",
+            null,
+            listOf(
+                Song("Moscow Mule", "4:05"),
+                Song("Después de la Playa", "3:50"),
+                Song("Me Porto Bonito", "2:58"),
+                Song("Tití Me Preguntó", "4:03"),
+                Song("Un Ratito", "2:56"),
+                Song("Yo No Soy Celoso", "3:50"),
+                Song("Tarot", "3:57"),
+                Song("Neverita", "2:53"),
+                Song("La Corriente", "3:18"),
+                Song("Efecto", "3:33"),
+                Song("Party", "3:47"),
+                Song("Aguacero", "3:30"),
+                Song("Enséñame a Bailar", "2:56"),
+                Song("Ojitos Lindos", "4:18"),
+                Song("Dos Mil 16", "3:28"),
+                Song("El Apagón", "3:21"),
+                Song("Otro Atardecer", "4:04"),
+                Song("Un Coco", "3:16"),
+                Song("Andrea", "5:39"),
+                Song("Me Fui de Vacaciones", "3:00"),
+                Song("Un Verano Sin Ti", "2:28"),
+                Song("Agosto", "2:19"),
+                Song("Callaita", "4:10")
             )
         )
     )
