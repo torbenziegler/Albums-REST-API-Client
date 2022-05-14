@@ -8,6 +8,7 @@ data class Album(
     val artist: String,
     val releaseYear: Int,
     val imageUrl: String,
+    val dominantColors: List<String>,
     val songs: List<Song>
 )
 
@@ -18,6 +19,13 @@ object Albums {
             "Travis Scott",
             2015,
             "${Constants.BASE_URL}/album_covers/rodeo.jpg",
+            listOf(
+                "#593a28",
+                "#313a34",
+                "#a56446",
+                "#efbbac",
+                "#201e19"
+            ),
             listOf(
                 Song("Pornography", "3:51"),
                 Song("Oh My Dis Side (feat. Quavo)", "5:51"),
@@ -44,6 +52,13 @@ object Albums {
             2016,
             "${Constants.BASE_URL}/album_covers/birds.jpg",
             listOf(
+                "#242d3d",
+                "#b97c78",
+                "#595158",
+                "#040407",
+                "#93332a"
+            ),
+            listOf(
                 Song("the ends", "3:21"),
                 Song("way back", "4:32"),
                 Song("coordinate", "3:46"),
@@ -65,6 +80,13 @@ object Albums {
             "Travis Scott",
             2018,
             "${Constants.BASE_URL}/album_covers/astroworld.jpg",
+            listOf(
+                "#b08854",
+                "#6baada",
+                "#bf5b10",
+                "#551e0d",
+                "#edc767"
+            ),
             listOf(
                 Song("STARGAZING", "4:30"),
                 Song("CAROUSEL", "3:00"),
@@ -90,6 +112,13 @@ object Albums {
             "Travis Scott",
             2019,
             "${Constants.BASE_URL}/album_covers/jackboys.jpg",
+            listOf(
+                "#5c4e0c",
+                "#98657b",
+                "#383302",
+                "#d9d1b9",
+                "#ab8605"
+            ),
             listOf(
                 Song("HIGHEST IN THE ROOM (feat. ROSALÍA & Lil Baby) - REMIX", "4:04"),
                 Song("JACKBOYS", "0:46"),
