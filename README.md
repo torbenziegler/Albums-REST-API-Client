@@ -26,6 +26,8 @@ Ktor was used to create this simple REST API
 - Routing
 - Monitoring
 
+> The api can be run locally in an IDE of your choice or within a docker container. Dockerfile is available in the /REST API directory.
+
 ### Endpoints
 
 Possible available endpoints:
