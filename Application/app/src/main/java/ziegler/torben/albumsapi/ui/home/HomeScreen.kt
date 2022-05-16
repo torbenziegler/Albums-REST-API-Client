@@ -17,6 +17,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import ziegler.torben.albumsapi.ui.card.TrackListCard
+import ziegler.torben.albumsapi.utils.Constants.BASE_URL
 
 @OptIn(ExperimentalCoilApi::class)
 @Composable
@@ -32,7 +33,7 @@ fun HomeScreen() {
 
         album?.let {
             ImageCard(painter = rememberImagePainter(
-                data = album.imageUrl,
+                data = "${BASE_URL}${album.imageUrl}",
                 builder = { crossfade(true) }
             ), contentDescription = album.name)
             Spacer(modifier = Modifier.height(8.dp))
