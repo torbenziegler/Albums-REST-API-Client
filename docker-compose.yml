@@ -1,5 +1,0 @@
-services:
-  server:
-    build:
-      context: REST API
-    container_name: REST_API_SERVER
