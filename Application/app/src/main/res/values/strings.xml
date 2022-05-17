@@ -2,4 +2,6 @@
     <string name="app_name">Albums API</string>
     <string name="show_less">Show less</string>
     <string name="show_more">Show more</string>
+    <string name="image_not_loaded">Image couldn\'t be loaded</string>
+    <string name="next_album">Next album</string>
 </resources>
