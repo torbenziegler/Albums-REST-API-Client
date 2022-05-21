@@ -34,8 +34,12 @@ fun HomeScreen() {
         val isLoading = viewModel.state.value.isLoading
 
         album?.let {
+            var imageUrl = album.imageUrl
+            if (album.imageUrl.startsWith("/static")) {
+                imageUrl = "${BASE_URL}${album.imageUrl}"
+            }
             ImageCard(
-                imageUrl = "${BASE_URL}${album.imageUrl}",
+                imageUrl = imageUrl,
                 contentDescription = album.name
             )
             Spacer(modifier = Modifier.height(8.dp))
